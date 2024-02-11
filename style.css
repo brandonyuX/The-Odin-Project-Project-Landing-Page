@@ -1,0 +1,121 @@
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    background-color: #141d2f;
+    /* Dark navy blue background color */
+    color: #fff;
+    /* Header text color */
+    padding: 10px 0;
+    /* Adjust padding as needed */
+    font-family: 'Roboto', sans-serif;
+    /* Use Roboto font */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    max-width: 100px;
+    /* Adjust logo size as needed */
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    /* Adjust spacing between links */
+}
+
+nav ul li a {
+    color: #fff;
+    /* Link text color */
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    /* Use Roboto font */
+}
+
+
+/* Hero Section Styles */
+.hero {
+    background-color: #141d2f;
+    /* Dark navy blue background color */
+    color: #fff;
+    /* Hero text color */
+    padding: 50px 0;
+    /* Adjust padding as needed */
+    font-family: 'Roboto', sans-serif;
+    /* Use Roboto font */
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-text {
+    max-width: 50%;
+    /* Adjust width of text section */
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    /* Adjust heading font size */
+    margin-bottom: 20px;
+    /* Adjust spacing between heading and paragraph */
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    /* Adjust paragraph font size */
+    margin-bottom: 20px;
+    /* Adjust spacing between paragraphs */
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    /* Button background color */
+    color: #fff;
+    /* Button text color */
+    padding: 10px 20px;
+    /* Adjust padding as needed */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero-image {
+    max-width: 50%;
+    /* Adjust width of image section */
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text,
+    .hero-image {
+        max-width: 100%;
+    }
+}
